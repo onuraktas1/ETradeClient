@@ -7,6 +7,7 @@ import { AdminModule } from './admin/admin.module';
 import { LayoutModule } from './admin/layout/layout.module';
 import { UiModule } from './ui/ui.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UiModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
