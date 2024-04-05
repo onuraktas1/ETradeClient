@@ -1,14 +1,34 @@
-import { Component } from '@angular/core';
-declare var $: any
+// import { Component } from '@angular/core';
+// declare var $: any;
+
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrl: './app.component.scss'
+// })
+// export class AppComponent {
+//   title = 'ETradeClient';
+// }
+// $(document).ready(()=>{
+//   alert("alertt")
+// })
+
+
+import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ETradeClient';
+
+  ngOnInit() {
+    $(document).ready(() => {
+      alert("alertt");
+    });
+  }
 }
-$(document).ready(()=>{
-  alert("alertt")
-})
+
