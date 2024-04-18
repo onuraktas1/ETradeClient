@@ -11,12 +11,6 @@ declare var $: any;
 })
 export class AppComponent  {
   title = 'ETradeClient';
-constructor(private toastrService: CustomToastrService){
-  toastrService.message("Merhaba","Onur",{
-    messageType:ToastrMessageType.Info,
-    position:ToastrPosition.BottomLeft
-  });
- // toastrService.message("Merhaba","Onur",ToastrMessageType.Success,ToastrPosition.TopCenter);
-}
+constructor(){}
 }
 
