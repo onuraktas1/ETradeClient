@@ -9,7 +9,7 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from './servic
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent  {
+export class AppComponent  { 
   title = 'ETradeClient';
 constructor(){}
 
